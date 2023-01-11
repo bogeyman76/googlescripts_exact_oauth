@@ -24,19 +24,19 @@ function run() {
     });
 
     
-        var options = {
-           headers: {
-            Authorization: 'Bearer ' + service.getAccessToken(),
-            'Content-Type': 'application/json',
-            'Accept' : 'application/json'
-          },
-          contentType : 'application/json',    
-          method      : 'get',      
-    
-        };
+      var options = {
+         headers: {
+          Authorization: 'Bearer ' + service.getAccessToken(),
+          'Content-Type': 'application/json',
+          'Accept' : 'application/json'
+        },
+        contentType : 'application/json',    
+        method      : 'get',      
+
+      };
       
-
-
+     // execute your API requests here
+    
   } else {  
     var authorizationUrl = service.getAuthorizationUrl();
     SpreadsheetApp.getUi().alert("Please copy and past into another browser window to login:\n\n " + authorizationUrl); 
