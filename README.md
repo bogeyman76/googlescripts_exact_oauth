@@ -10,14 +10,5 @@ Sample code(replace ## with your warehouse id):
 
 response = JSON.parse(UrlFetchApp.fetch('https://start.exactonline.com/api/v1/##/manufacturing/BillOfMaterialVersions', options));
 
-// For paginated data sets:
-psdataset = [];
-psdataset.push(response.d.results);
-
-while(response.d.__next != null) {  // cycles through bulk API calls until the last data set is found
-      response = JSON.parse(UrlFetchApp.fetch(response.d.__next, options));
-      psdataset.push(response.d.results);
-}
-//////
 
 If you require assistance in pagination on larger data sets and/or iteration over the returned results please contact me.
