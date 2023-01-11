@@ -13,5 +13,5 @@ response = JSON.parse(UrlFetchApp.fetch('https://start.exactonline.com/api/v1/##
 
 If you require assistance in pagination on larger data sets and/or iteration over the returned results please contact me.
 
-The link below lists the API endpoints:
+This link lists the API endpoints:
 https://start.exactonline.nl/docs/HlpRestAPIResources.aspx?SourceAction=10
